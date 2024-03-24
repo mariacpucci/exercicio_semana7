@@ -1,0 +1,32 @@
+<!--verificar se o codigo da questão 7 esta rodando-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questão 7</title>
+<script>
+
+    function verificarVoto(){
+
+        var idade = prompt("Insira sua idade");
+    
+        if (idade < 16){
+            console.log("Não pode votar!");
+        }
+        else if (idade >= 16 && idade <18){
+            console.log("Voto facultativo!");
+        }
+        else {
+            console.log("Voto obrigatório!");
+        }
+    }
+</script>
+</head>
+<body>
+
+<button onclick="verificarVoto()">Verificar Situação de Voto</button>
+
+</body>
+</html>
